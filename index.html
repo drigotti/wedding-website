@@ -18,15 +18,15 @@
     <link href='http://fonts.googleapis.com/css?family=Handlee|Roboto' rel='stylesheet' type='text/css'>
 
 <style>
-.down-arrow {background:none;border:none;color:white;font-size:65px;opacity:.5;}
-.down-arrow:hover {opacity:.8;color: white!important;}
-.portfolio {background-color: gray;}
-body a {color:white;text-decoration: underline;}
-body a:hover {color:#f1f1f1;}
+.down-arrow {color: white!important;font-size: 60px;opacity: .4;}
+.down-arrow:hover {color: white!important;opacity: .6;}
+body {background-color: #f5f5f5;color: #333;font-family: 'Handlee', cursive;font-size: 16px;}
+.container {border-left:5px solid #ffd8e4;border-right:5px solid #ffd8e4;}
+body a {color:black;text-decoration: underline;}
 .map-background {background: url(img/map.png) no-repeat center center fixed;color: #333;}
-h1, h2 {font-family: 'Handlee', cursive;}
-.map-fixed {background:url(img/map.png) no-repeat center center;padding: 50px;}
-.hashtag {background:url(img/map.png) no-repeat center center;padding: 50px;}
+h1, h2 {font-family: arial;color: #333;}
+h2 a {color:#f5f5f5;text-decoration: none;}
+h2 a:hover {color:#f5f5f5;text-decoration: none;}
 </style>
 
 
@@ -35,7 +35,7 @@ h1, h2 {font-family: 'Handlee', cursive;}
 <body>
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle" style="border-radius:0px;border:none;"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -76,13 +76,13 @@ h1, h2 {font-family: 'Handlee', cursive;}
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Welcome</h2>
-                    <hr>
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">Welcome</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="lead">We're engaged! We are so excited to share this special day with you. Check back here for updates on the festivities! While you're waiting, check out some photos below.</p>
+                    <hr>
+                    <p class="lead">We're engaged! We are so excited to share this special day with you. We are still planning the wedding, so please check back here for updates.</p>
                 </div>
             </div>
         </div>
@@ -90,16 +90,16 @@ h1, h2 {font-family: 'Handlee', cursive;}
     <!-- /Intro -->
 
     <!-- The Couple -->
-    <div id="couple" class="portfolio">
+    <div id="couple" class="intro">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center" style="color:white;">
-                    <h2>The Couple</h2>
-                    <hr>
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">The Couple</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center" style="color:white;">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <hr>
                    <p class="lead">Dave and Kim met in 2010 at a friend's birthday party in Seattle and have been dating ever since. They got engaged in May 2014 during a weekend getaway to Portland. They enjoy cooking together, playing with <a href="http://www.discothecorgi.com" target="_blank">Disco</a>, and coming up with crazy new start-up ideas. </p>
                 </div>
             </div>
@@ -132,34 +132,36 @@ h1, h2 {font-family: 'Handlee', cursive;}
     <!-- /Portfolio -->
 
     <!-- Services -->
-    <div id="travel" class="services">
+    <div id="travel" class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Travel & Accomodations</h2>
-                    <hr>
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">Travel & Accomodations</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2 col-md-offset-3 text-center">
+                    <hr>
                     <div class="service-item">
                         <i class="service-icon fa fa-plane"></i>
-                        <h4>Fly</h4>
-                        <p>Fly into John F. Kennedy, LaGuardia or Newark airports. Dates are still TBD.</p>
+                        <span style="font-size:21px;">Fly</span>
+                        <p>Fly into John F. Kennedy (JFK), LaGuardia (LGA), or Newark (EWR) airports.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
+                    <hr>
                     <div class="service-item">
                         <i class="service-icon fa fa-building-o"></i>
-                        <h4>Sleep</h4>
-                        <p>We're working on pulling together group rates at hotels in the area. Check back here for details.</p>
+                        <span style="font-size:21px;">Sleep</span>
+                        <p>We're working on with local hotels for group rates. Check back here for details.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
+                    <hr>
                     <div class="service-item">
                         <i class="service-icon fa fa-gamepad"></i>
-                        <h4>Play</h4>
-                        <p>NYC offers an assortment of museums, amazing sights, great food, and hidden gems. <a href="https://foursquare.com/kimmanis/list/wedding-weekend-activites" target="_blank">See our favorites on Foursquare.</a></p>
+                        <span style="font-size:21px;">Play</span>
+                        <p>NYC offers an assortment of museums, great food, and hidden gems. <a href="https://foursquare.com/kimmanis/list/wedding-weekend-activites" target="_blank">Our favorites.</a></p>
                     </div>
                 </div>
             </div>
@@ -167,54 +169,51 @@ h1, h2 {font-family: 'Handlee', cursive;}
     </div>
     <!-- /Services -->
 
-    <div id="instagram" class="call-to-action" style="padding:50px;">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <h2><a href="http://searchinstagram.com/kimanddavewedding" target="_blank">#KimAndDaveWedding</a></h2>
-                <hr>
+    <div id="instagram" class="intro" style="padding:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2 style="color:#f5f5f5 !important;background-color:#428bca;padding:10px;"><a href="http://searchinstagram.com/kimanddavewedding" target="_blank">#KimAndDaveWedding</a></h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 col-lg-offset-1 text-center">
-                 <div id="instafeed"></div>
+            <div class="row">
+                <div class="col-md-10 col-lg-offset-1 text-center">
+                    <hr>
+                    <p>Share your memories on instagram using the hashtag #KimAndDaveWedding.</p>
+                     <div id="instafeed"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Call to Action -->
-    <div id="registry" class="container buffer">
+    <div id="registry" class="intro buffer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center buffer">
-                    <h2>Registry</h2>
-                    <hr>
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">Registry</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2 col-md-offset-1 text-center">
-                    <div class="service-item">
-                        <a href="http://www.crateandbarrel.com/Gift-Registry/Kim-Manis-and-Dave-Rigotti/r5197850" target="_blank">
-                        <img class="img-portfolio img-responsive" src="img/cratelogo.png">
-                        </a>
-                    </div>
-                </div>
-                
-                
-
-                <div class="col-md-2 col-md-offset-2 text-center">
-                    <div class="service-item">
-                        <a href="http://smile.amazon.com/registry/wedding/2HLZ559A1NV13" target="_blank">
-                        <img class="img-portfolio img-responsive" src="img/Amazon.png">
-                        </a>
-                    </div>
+                    <hr>
+                    <a href="http://www.crateandbarrel.com/Gift-Registry/Kim-Manis-and-Dave-Rigotti/r5197850" target="_blank">
+                    <img class="img-portfolio img-responsive" src="img/cratelogo.png" style="margin-top:10px;">
+                    </a>
                 </div>
 
                 <div class="col-md-2 col-md-offset-2 text-center">
-                    <div class="service-item">
-                        <a href="http://www.honeyfund.com/wedding/kimanddavewedding" target="_blank">
-                        <img class="img-portfolio img-responsive" src="img/honeyfund.png">
-                        </a>
-                    </div>
+                    <hr>
+                    <a href="http://smile.amazon.com/registry/wedding/2HLZ559A1NV13" target="_blank">
+                    <img class="img-portfolio img-responsive" src="img/Amazon.png" style="margin-top:10px;">
+                    </a>
+                </div>
+
+                <div class="col-md-2 col-md-offset-2 text-center">
+                    <hr>
+                    <a href="http://www.honeyfund.com/wedding/kimanddavewedding" target="_blank">
+                    <img class="img-portfolio img-responsive" src="img/honeyfund.png">
+                    </a>
                 </div>
 
             </div>
@@ -224,16 +223,16 @@ h1, h2 {font-family: 'Handlee', cursive;}
     <!-- /Call to Action -->
 
     <!-- Call to Action -->
-    <div id="ceremony" class="call-to-action" style="background-color:gray;">
+    <div id="ceremony" class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Ceremony & Reception</h2>
-                    <hr>
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">Ceremony & Reception</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
+                    <hr>
                    <p class="lead">TBD</p>
                 </div>
             </div>
@@ -246,12 +245,12 @@ h1, h2 {font-family: 'Handlee', cursive;}
         <div  id="contact" class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Contact us</h2>
-                    <hr>
+                    <h2 style="color:#f5f5f5;background-color:#428bca;padding:10px;">Contact</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
+                    <hr>
                     <p class="lead">Need to reach us? You can email us at kimmanis@gmail.com.</p>
                 </div>
             </div>
