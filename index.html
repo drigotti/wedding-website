@@ -20,7 +20,7 @@
 .down-arrow {color: white!important;font-size: 60px;opacity: .4;}
 .down-arrow:hover {color: white!important;opacity: .6;}
 body {background-color: #f5f5f5;color: #2B3769;font-family: 'helvetica';font-size: 16px;}
-.container {color: #2B3769; border-left:5px solid #F49C92;border-right:5px solid #F49C92;}
+.container {color: #2B3769; border-left:5px solid #DF5382;border-right:5px solid #DF5382;}
 body a {color:black;text-decoration: underline;}
 .map-background {background: url(img/map.png) no-repeat center center fixed;color: #333;}
 h1, h2 {font-family: 'Comfortaa', cursive; color: #2B3769;}
@@ -64,7 +64,7 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
     <div id="top" class="header">
         <div class="vert-text">
             <h1>Kim <span style="font-style:italic">&</span> Dave</h1>
-            <h3 style="color:#F49C92;">July 19, 2015</h3>
+            <h3 style="color:#DF5382;">July 19, 2015</h3>
             <a href="#welcome" class="down-arrow"><i class="fa fa-arrow-circle-o-down"></i></a>
         </div>
     </div>
@@ -171,7 +171,7 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
             </div> <br/>
             <div class="row">
                    <div class="col-md-2 col-md-offset-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.869829386462!2d-74.01952699999998!3d40.67683699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a861d42238b%3A0xcaa6b5e3106c3187!2sThe+Liberty+Warehouse!5e0!3m2!1sen!2sus!4v1401757195000" width="400" height="400" frameborder="0" style="border:0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.869829386462!2d-74.01952699999998!3d40.67683699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a861d42238b%3A0xcaa6b5e3106c3187!2sThe+Liberty+Warehouse!5e0!3m2!1sen!2sus!4v1401757195000" width="400" height="350" frameborder="0" style="border:0"></iframe>
                 </div>
                 <div class="col-md-5 col-md-offset-3">
                     <p>
@@ -184,6 +184,7 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
                     </address>
                                     
                     <p>The Liberty Warehouse is located on Pier 41 in the historic shipping yards of Red Hook, Brooklyn. The building was constructed in the pre-Civil War 1850′s and has recently been renovated into an event space. Located directly on the water’s edge, there are expansive views of New York Harbor. The Liberty Warehouse is the only location in all of New York where the Statue of Liberty is face front as she looks on to France.</p>
+                    <p><a href="https://www.google.com/maps/dir//The+Liberty+Warehouse,+260+Conover+St,+New+York,+NY+11231/@40.676837,-74.019527,17z/data=!4m12!1m3!3m2!1s0x89c25a861d42238b:0xcaa6b5e3106c3187!2sThe+Liberty+Warehouse!4m7!1m0!1m5!1m1!1s0x89c25a861d42238b:0xcaa6b5e3106c3187!2m2!1d-74.019527!2d40.676837" target="_blank">Get Directions</a></p>
                     
                 </div>
 
@@ -249,6 +250,7 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
         </div>
     </div>
 
+
     <!-- Footer -->
     <footer>
         <div  id="contact" class="container">
@@ -267,10 +269,13 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
     </footer>
     <!-- /Footer -->
 
+
+
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript"  src="js/instafeed.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
     
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
@@ -314,6 +319,14 @@ h2 a:hover {color:#f5f5f5;text-decoration: none;}
     });
     feed.run();
     </script>
+
+<!-- JS countdown if we decide to use it -->
+        <!-- <div id="getting-started"></div>-->
+<script type="text/javascript">
+  $('#getting-started').countdown('2015/01/01', function(event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+</script>
 
 </body>
 
